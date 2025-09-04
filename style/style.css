@@ -7,19 +7,16 @@
 }
 
 body {  
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: #FFFFFF;
     color: #3A2F2F;
 }
 
-.titulo-destaque {
-    color: #FFB7CE;
-    
-}
+
 
 .apresentacao {
-    margin: 10%;
+    padding: 2% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,6 +35,11 @@ body {
     margin-top: 20px;
     font-family: "Quicksand", sans-serif;
 
+}
+
+.titulo-destaque {
+    color: #FFB7CE;
+    
 }
 
 .titulo-conteudo-menor {
@@ -62,6 +64,9 @@ body {
 
 .apresentacao-links-links {
     /* background-color: #FFB7CE;  */
+    display : flex;
+    justify-content: center;
+    gap: 10px;
     border: 3px solid #6e0c2b;
     width: 230px;
     text-align: center;
@@ -74,3 +79,40 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+.apresentacao-links-links:hover {
+    background-color: #FFB7CE;
+    color: white;
+    transition: 0.3s;
+}
+
+.apresentacao-links-links img {
+    width: 35px; /* largura desejada */
+    height: 35px; /* altura desejada */
+    object-fit: cover; /* mantém proporção e corta se necessário */
+}
+
+.rodape {
+    background-color: #6e0c2b;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #3A2F2F;
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: "TASA Explorer", sans-serif;
+}
