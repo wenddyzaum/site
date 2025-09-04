@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=TASA+Explorer:wght@400..800&display=swap');
 
+:root {
+    --cor-primaria: #FFB7CE;
+    --cor-secundaria: #6e0c2b;
+    --cor-fundo: #FFFFFF;
+    --cor-texto: #3A2F2F;
+    --fonte-principal: 'Quicksand', sans-serif;
+    --fonte-secundaria: 'TASA Explorer', sans-serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +19,8 @@
 body {  
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    color: #3A2F2F;
+    background-color: var(--cor-fundo);
+    color:var(--cor-texto);
 }
 
 
@@ -33,18 +43,18 @@ body {
 .titulo-conteudo { 
     font-size: 50px;
     margin-top: 20px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-principal);
 
 }
 
 .titulo-destaque {
-    color: #FFB7CE;
+    color:var(--cor-primaria);
     
 }
 
 .titulo-conteudo-menor {
     font-size: 20px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-principal);
 }
 .apresentacao-links {
     display: flex;
@@ -56,7 +66,7 @@ body {
 
 .apresentacao__subtitulo {
     font-size: 24px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-principal  );
     font-weight: 700;
 
 }
@@ -67,7 +77,7 @@ body {
     display : flex;
     justify-content: center;
     gap: 10px;
-    border: 3px solid #6e0c2b;
+    border: 3px solid var();
     width: 230px;
     text-align: center;
     border-radius: 8px;
@@ -75,13 +85,13 @@ body {
     font-weight: 700;
     padding: 10px 0;
     text-decoration: none;
-    color : #3A2F2F;
-    font-family: "Quicksand", sans-serif;
+    color : var(--cor-texto);
+    font-family: var(--fonte-principal);
 }
 
 .apresentacao-links-links:hover {
-    background-color: #FFB7CE;
-    color: white;
+    background-color: var(--cor-primaria);
+    color:var(--cor-fundo);
     transition: 0.3s;
 }
 
@@ -92,13 +102,13 @@ body {
 }
 
 .rodape {
-    background-color: #6e0c2b;
-    color: white;
+    background-color: var(--cor-secundaria);
+    color:var(--cor-fundo);
     text-align: center;
     padding: 5px 0;
     bottom: 0;
     width: 100%;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .cabecalho {
@@ -111,8 +121,8 @@ body {
 }
 .cabecalho__menu__link {
     text-decoration: none;
-    color: #3A2F2F;
+    color: var(--cor-texto);
     font-size: 20px;
     margin-right: 20px;
-    font-family: "TASA Explorer", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
